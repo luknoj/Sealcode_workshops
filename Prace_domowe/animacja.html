@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<style media="screen">
+  .container {
+    height: 100vh;
+  }
+  .edge {
+    
+    border-left: 4px solid rgb(59, 87, 129);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: none;
+    border-radius: 50%;
+    animation: one 2s linear infinite;
+  }
+  .edge2 {
+    animation: one 2s linear infinite;
+    border-right: 4px solid rgb(223, 237, 243);
+    position: absolute;
+    width: 108px;
+    height: 108px;
+    background: none;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+  }
+  .edge3{
+    position: absolute;
+    top: 40px;
+    left: 42px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: rgb(122, 141, 170);
+    animation: fade 5s linear infinite;
+  }
+  .dot {
+    transform: skew(20deg);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+    left: 54px;
+    top: 54px;
+    animation: one 2s linear infinite;
+ 
+  }
+  @keyframes one {
+    0% {
+      transform:  rotate(0deg);
+    }
+    100% {
+      transform:  rotate(-360deg);
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50%{
+      opacity: 100%;
+    }
+    100% {
+      opacity: 0%; 
+    }
+  }
+</style>
+<body>
+  <div class="container">
+      <div class="edge"></div>
+      <div class="edge2"></div>
+      <div class="edge3"></div>
+  </div>
+</body>
+</html>
