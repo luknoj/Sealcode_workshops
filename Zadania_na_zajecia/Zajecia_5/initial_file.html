@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <style media="screen">
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 800px;
+      margin: 50px auto 0 auto;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+    .box > div {
+      width: 33.3%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+    }
+    .box > div.A {background: red; order: 3;}
+    .box > div.B {background: yellow;order: 5;}
+    .box > div.C {background: blue;order: 2;width: 30%;}
+    .box > div.D {background: purple; order: 11;}
+    .box > div.E {background: brown;order: 4;width: 30%;}
+    .box > div.F {background: pink;order: 7;}
+    .box > div.G {background: green;order: 9;}
+    .box > div.H {background: orange;order: 6;}
+    .box > div.I {background: gray;order: 8;}
+    .box > div.J {
+      order: -1;
+      background: magenta;
+    }
+    .box > div.K {
+      order: 10;
+      background: olive;
+      width: 50%;
+    }
+  </style>
+</head>
 <title>Home</title>
 <body>
   <div class="box">

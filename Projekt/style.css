@@ -1,47 +1,133 @@
 * {
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
+    color: white;
+    box-sizing: border-box;
 }
 body {
 font-size: 10px;
 }
-.container {
+.todo{
+    border-radius: 10px;
+    padding: 5px;
     width: 60vh;
-    margin-left: auto;
-    margin-right: auto
+    margin:100px auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(50, 51, 53);
+}
+#header{
+  background: rgb(63, 71, 86);
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+}
+.head-title-first {
+  color: rgb(190, 193, 116);
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.head-title-second {
+  padding-top: 10px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
+    padding-bottom: 10px;
 }
 #add_task {
+    background: rgb(56, 56, 58);
     padding: 10px 0;
     width: 100%;
+}
+.date {
+    line-height: 29px;
+    text-align: center;
     position: relative;
     display: inline-block;
-}
-.date{
-    font-size: 1.5rem;
-    padding: 10px 0;
+    font-weight: bold;
+    padding: 10px;
     float: left;
     width: 50%;
-    font-size: 20px;
+    font-size: 1rem;
 }
 .tasks {
-    padding: 10px 0;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
     float: left;
     width: 50%;
 }
+.tasks input::placeholder {
+  font-weight: bold;
+  color: rgb(166, 167, 168);
+}
+.tasks input {
+  float: left;
+  height: 29px;
+  padding: 5px;
+  padding-right: 0;
+  background: none;
+  color: white;
+  border: 0;
+  border-left: 3px solid rgb(63, 71, 86);
+  border-radius: 2px 0 0 2px;
+  box-shadow: 0px 1px 0px 0px white;
 
+}
+.tasks input:focus{
+  outline: none;
+}
+.submit {
+  float: left;
+  font-weight: bold;
+  text-align: center;
+  background: rgb(63, 71, 86);
+  border-radius: 0 5px 5px 0;
+  padding: 5px;
+  height: 29px;
+  border:1px solid rgb(63, 71, 86);
+  box-shadow: 0px 1px 0px 0px white;
+}
+.submit:focus{
+  outline: none;
+}
 #task_input {
+    background: rgb(56, 56, 58);
     padding: 10px 0;
-    width: 100%; 
+    width: 100%;
+}
+textarea[name=tasktext] {
+  resize: none;
+}
+.content-input {
+  padding: 10px;
+  background: none;
+  border-top: 1px solid rgb(63, 71, 86);
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 3px solid rgb(63, 71, 86);
+  border-radius: 0 0 5px 5px;
+}
+.content-input::placeholder {
+  padding: 5px;
+}
+.content-input:focus{
+  outline: none;
 }
 #task_input textarea {
     width: 100%;
 }
 #task_input button {
+    border: 0px;
+    background: rgb(63, 71, 86);
     padding: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
     width: 100%;
 }
 #task_list {

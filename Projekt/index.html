@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <title>ToDoApp</title>
 </head>
 <body>
-    <div class="container">
-        <section id="header">
-            <h1 class="title">What you want to do?</h1>
-        </section>
-        <section id="add_task">
-          <h1 class="title">Add your task</h1>
-            <p class="date">10 sierpnia 2017r.</p>
+    <div class="todo">
+        <div id="header">
+            <h1 class="head-title-first">Pick your tasks!</h1>
+            <h3 class="head-title-second">What you have to do today?</h3>
+        </div>
+        <div id="add_task">
+            <p class="date">Today is: 10 JANUARY 2017r.</p>
             <div class="tasks">
-                <input type="text" name="taks" placeholder="Task namme">
-                <button>Submit</button>
+                <input type="text" name="taks" placeholder="NAME ME!">
+                <button class="submit">Submit</button>
             </div>
-        </section>
-        <section id="task_input">
+        </div>
+        <div id="task_input">
             <h1 class="title">Task details</h1>
-            <textarea name="tasktext" id="taks_details" cols="30" rows="10"
+            <textarea class="content-input" name="tasktext" id="taks_details" cols="30" rows="10"
             placeholder="Input task source"></textarea>
             <button>Submit</button>
-        </section>
-        <section id="task_list">
+        </div>
+        <div id="task_list">
             <h1 class="title">Task list</h1>
             <ul>
                 <li>Task 1 <input type="checkbox"><button>X</button></li>
@@ -34,7 +35,7 @@
                 <li>Task 1 <input type="checkbox"><button>X</button></li>
                 <li>Task 1<input type="checkbox"><button>X</button></li>
             </ul>
-        </section>
+        </div>
         <footer>
             <p class="title">FOOTER</p>
         </footer>
